@@ -225,7 +225,6 @@ public class JREUtils {
             }
             if (LOCAL_RENDERER.equals("opengles3_desktopgl_zink_kopper")){
                 envMap.put("POJAVEXEC_EGL","libEGL_mesa.so"); // Use Mesa EGL
-                envMap.put("FD_DEV_FEATURES","enable_ubwc_flag_hint=1"); // K1mch1 Turnip fix for OneUI rendering issues
                 envMap.put("TU_DEBUG", "noubwc"); // Turnip fix for OneUI rendering issues
             }
             if (LOCAL_RENDERER.toLowerCase().contains("zink")){
